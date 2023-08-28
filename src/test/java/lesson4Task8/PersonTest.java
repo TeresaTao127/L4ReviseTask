@@ -11,5 +11,11 @@ class PersonTest {
         boolean expectedResult = false;
         boolean result = person1.equals(person2);
         assertEquals(expectedResult, result);
+
+        Person person3 = new Person("Mike", 30, "Male", "China");
+        Person person4 = new Person("Mike", 30, "Male", "China");
+        boolean expectedResult1=true;
+        boolean result1=person3.equals(person4);
+        assertEquals(expectedResult1,result1);
     }
 }
